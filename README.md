@@ -10,3 +10,4 @@ git push -u origin master
 
 # 1. URLs & Views
 # 2. Dynamic URL :- int, str, slug 
+# 3. HTML template as response
