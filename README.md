@@ -13,3 +13,4 @@ git push -u origin master
 # 3. HTML template as response
 # 4. Passing data from view to template
 # 5. For loop
+# 6. If... else...

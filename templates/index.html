@@ -22,4 +22,27 @@
         {{forloop.counter}} {{c}}
     </p>
     {% endfor %}
+    <br/>
+
+    <b>If... else ...</b>
+    <table border="1" cellpadding="3">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cd in courseDetails %}
+            <tr>
+                <td>{{cd.name}}</td>
+                {% if cd.marks > "40" %}
+                <td>{{cd.marks}}</td>
+                {% else %}
+                <td>F</td>
+                {% endif %}
+            </tr>
+        {% endfor%}
+        </tbody>
+    </table>
 </body>

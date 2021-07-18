@@ -5,7 +5,12 @@ def home(req):
     data = {
         "title": "Home Page",
         "welcome": "Welcome! to Home Page",
-        "courses": ["Python", "Django", "JavaScript", "ReactJs"]
+        "courses": ["Python", "Django", "JavaScript", "ReactJs"],
+        "courseDetails": [
+            {"name": "Guddee", "marks": "90"},
+            {"name": "Binu", "marks": "80"},
+            {"name": "Riya", "marks": "30"},
+        ],
     }
     return render(req, "index.html", data)
 
