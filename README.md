@@ -12,3 +12,4 @@ git push -u origin master
 # 2. Dynamic URL :- int, str, slug 
 # 3. HTML template as response
 # 4. Passing data from view to template
+# 5. For loop

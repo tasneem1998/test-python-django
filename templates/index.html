@@ -7,4 +7,19 @@
 
 <body>
     <h1>{{welcome}}</h1>
+    
+    <b># for loop</b>
+    <ol>
+    {% for c in courses %}
+        <li>{{c}}</li>
+    {% endfor %}
+    </ol>
+    <br/>
+
+    <b># forloop.counter</b>
+    {% for c in courses %}
+    <p>
+        {{forloop.counter}} {{c}}
+    </p>
+    {% endfor %}
 </body>

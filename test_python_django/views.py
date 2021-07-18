@@ -4,7 +4,8 @@ from django.shortcuts import render
 def home(req):
     data = {
         "title": "Home Page",
-        "welcome": "Welcome! to Home Page"
+        "welcome": "Welcome! to Home Page",
+        "courses": ["Python", "Django", "JavaScript", "ReactJs"]
     }
     return render(req, "index.html", data)
 
