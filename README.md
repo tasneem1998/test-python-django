@@ -17,3 +17,4 @@ git push -u origin master
 # 7. Static files
 # 8. Include tag :- common header & footer
 # 9. Extends, include & block
+# 10.URL tag
