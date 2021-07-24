@@ -1,5 +1,6 @@
 
-{% include "header.html" %}
+{% extends 'base.html' %}
+{% block content %}
 {% load static %}
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
@@ -152,4 +153,4 @@
     </section><!-- End Testimonials Section --> {% endcomment %}
 
   </main><!-- End #main -->
-{% include "footer.html" %}
+{% endblock %}
