@@ -14,3 +14,4 @@ git push -u origin master
 # 4. Passing data from view to template
 # 5. For loop
 # 6. If... else...
+# 7. Static files
