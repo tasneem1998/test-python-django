@@ -17,4 +17,5 @@ git push -u origin master
 # 7. Static files
 # 8. Include tag :- common header & footer
 # 9. Extends, include & block
-# 10.URL tag
+# 10.URL tag - using name (urls.py)
+# 11.Active link highlight

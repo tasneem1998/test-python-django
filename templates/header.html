@@ -10,9 +10,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons 
-  <link href="{% static 'img/favicon.png" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png" rel="apple-touch-icon">-->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
   <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
@@ -32,13 +30,6 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Mentor - v2.2.1
-  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -53,12 +44,24 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'courses' %}">Courses</a></li>
-          <li><a href="{% url 'trainers' %}">Trainers</a></li>
-          <li><a href="{% url 'events' %}">Events</a></li>
-          <li><a href="{% url 'pricing' %}">Pricing</a></li>
+            <li class="{% if request.path == '/' %}active{% endif %}">
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="{% if request.path == '/about/' %}active{% endif %}">
+                <a href="{% url 'about' %}">About</a>
+            </li>
+            <li class="{% if request.path == '/courses/' %}active{% endif %}">
+                <a href="{% url 'courses' %}">Courses</a>
+            </li>
+            <li class="{% if request.path == '/trainers/' %}active{% endif %}">
+                <a href="{% url 'trainers' %}">Trainers</a>
+            </li>
+            <li class="{% if request.path == '/events/' %}active{% endif %}">
+                <a href="{% url 'events' %}">Events</a>
+            </li>
+            <li class="{% if request.path == '/pricing/' %}active{% endif %}">
+                <a href="{% url 'pricing' %}">Pricing</a>
+            </li>
           <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -76,7 +79,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
