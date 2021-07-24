@@ -15,3 +15,4 @@ git push -u origin master
 # 5. For loop
 # 6. If... else...
 # 7. Static files
+# 8. Include tag :- common header & footer
