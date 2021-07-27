@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block  content %}
+{% load static %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>User Form</h2>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= User Section ======= -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center my-5">
+          <div class="col-md-6 card py-2">
+            <form>
+              <div class="form-group">
+                <label for="val1">Value1</label>
+                <input type="text" class="form-control" name="val1" value="{{val1}}">
+              </div>
+              <div class="form-group">
+                <label for="val2">Value2</label>
+                <input type="text" class="form-control" name="val2" value="{{val2}}">
+              </div>
+              <div class="form-group">
+                <label for="output">Output</label>
+                <input type="text" class="form-control" value="{{total}}">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+{% endblock  %}

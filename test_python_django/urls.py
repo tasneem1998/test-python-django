@@ -27,4 +27,5 @@ urlpatterns = [
     path("pricing/", views.pricing, name="pricing"),
     path("contact/", views.contact, name="contact"),
     path("course-details/", views.courseDetails, name="course-details"),
+    path("user-form/", views.userForm, name="user-form"),
 ]
