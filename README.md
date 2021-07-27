@@ -19,3 +19,5 @@ git push -u origin master
 # 9. Extends, include & block
 # 10.URL tag - using name (urls.py)
 # 11.Active link highlight
+# 12.HTTP request method - get
+# 12.HTTP request method - post (csrf token)

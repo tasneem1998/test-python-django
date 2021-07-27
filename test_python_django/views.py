@@ -27,8 +27,8 @@ def courseDetails(req):
 def userForm(req): 
     data = dict()
     try:
-        n1 = req.GET["val1"]
-        n2 = req.GET["val2"]
+        n1 = req.POST["val1"]
+        n2 = req.POST["val2"]
         total = int(n1) + int(n2)
         data = {
             "val1" : n1,
